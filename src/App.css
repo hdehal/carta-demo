@@ -43,3 +43,59 @@ a:visited {
 #logo_text span {
   opacity: 0.5;
 }
+
+/* Paper overrides */
+.paperRoot {
+  overflow: hidden !important;
+  padding-bottom: 1em;
+}
+h2, #paperGrant p {
+  margin: 0.25em;
+}
+#paperGrant {
+  background-color: #fff2d6;
+  text-align: left;
+}
+#signatureForm {
+  font-family: 'Euphoria Script', cursive;
+  font-size: 1.5em;
+}
+
+/* Autograph signature overrides */
+.MuiFilledInput-root, .MuiInputLabel-filled {
+  margin-left: 4.9em !important
+}
+.tooltip::after {
+	background-color: #d42e2e;
+	border-radius: 10px;
+	color: #FFF;
+	padding: 10px 15px;
+	position: absolute;
+	text-align: center;
+	z-index: 999;
+}
+.tooltip::before {
+	background-color: #d42e2e;
+	content: ' ';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	z-index: 999;
+}
+.tooltip:hover::after {
+	display: block;
+}
+.tooltip:hover::before {
+	display: block;
+}
+.tooltip.left::after {
+	content: 'Sign here';
+	top: 25%;
+	left: 0;
+	transform: translateX(calc(-5% - 10px));
+}
+.tooltip.left::before {
+	top: 50%;
+	left: 85px;
+	transform: translate(calc(-100% - 5px), -25%) rotate(45deg);
+}
