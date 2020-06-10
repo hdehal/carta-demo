@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('//fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #f5c519;
+}
+a {
+  color: #f5c519;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: #f5c519;
+}
+a:visited {
+  color: #f5c519;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header and logo */
+#header {
+  height: 60px;
+  padding: 0.25em;
+}
+#logo_icon img {
+  max-height: 2em;
+  float: left;
+  margin: 0.5em;
+}
+#logo_text {
+  text-transform: lowercase;
+  font-family: 'Ubuntu', sans-serif; 
+  font-size: 1.5em;
+  line-height: 2em;
+}
+#logo_text span {
+  opacity: 0.5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Paper overrides */
+.paperRoot {
+  overflow: hidden !important;
+  padding-bottom: 1em;
+}
+h2, #paperGrant p {
+  margin: 0.25em;
+}
+#paperGrant {
+  background-color: #fff2d6;
+  text-align: left;
+}
+#signatureForm {
+  font-family: 'Euphoria Script', cursive;
+  font-size: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Autograph signature overrides */
+.MuiFilledInput-root, .MuiInputLabel-filled {
+  margin-left: 5em !important
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip::after {
+	background-color: #d42e2e;
+  font-size: 0.9em;
+  font-weight: bold;
+	color: #FFF;
+	padding: 5px 10px;
+	position: absolute;
+	text-align: center;
+	z-index: 999;
+}
+.tooltip::before {
+	background-color: #d42e2e;
+	content: ' ';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	z-index: 999;
+}
+.tooltip:hover::after {
+	display: block;
+}
+.tooltip:hover::before {
+	display: block;
+}
+.tooltip.left::after {
+	content: 'Sign here';
+	top: 40%;
+	left: 0;
+	transform: translateX(calc(-10%));
+}
+.tooltip.left::before {
+	top: 51%;
+	left: 79px;
+	transform: translate(calc(-100%)) rotate(45deg);
 }
