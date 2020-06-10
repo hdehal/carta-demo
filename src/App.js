@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Form from './components/form';
 import Grant from './components/grant';
 import PieChart from './components/pieChart';
+import BarGraph from './components/barGraph';
 import LineGraph from './components/lineGraph';
 
 const useStyles = makeStyles((theme) => ({
@@ -34,13 +35,19 @@ function App() {
             <Grant />
           </Paper>
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
               <PieChart />
             </Paper>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>
+              <BarGraph />
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>
               <LineGraph />
             </Paper>
