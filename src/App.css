@@ -63,13 +63,14 @@ h2, #paperGrant p {
 
 /* Autograph signature overrides */
 .MuiFilledInput-root, .MuiInputLabel-filled {
-  margin-left: 4.9em !important
+  margin-left: 5em !important
 }
 .tooltip::after {
 	background-color: #d42e2e;
-	border-radius: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
 	color: #FFF;
-	padding: 10px 15px;
+	padding: 5px 10px;
 	position: absolute;
 	text-align: center;
 	z-index: 999;
@@ -90,12 +91,12 @@ h2, #paperGrant p {
 }
 .tooltip.left::after {
 	content: 'Sign here';
-	top: 25%;
+	top: 40%;
 	left: 0;
-	transform: translateX(calc(-5% - 10px));
+	transform: translateX(calc(-10%));
 }
 .tooltip.left::before {
-	top: 50%;
-	left: 85px;
-	transform: translate(calc(-100% - 5px), -25%) rotate(45deg);
+	top: 51%;
+	left: 79px;
+	transform: translate(calc(-100%)) rotate(45deg);
 }
