@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
+import Header from './components/header';
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from '@material-ui/core/styles';
@@ -19,6 +20,8 @@ function App() {
 
   return (
     <BrowserRouter>
+
+      <Header />
 
       <div className="paperRoot">
         <Grid container spacing={2}>
