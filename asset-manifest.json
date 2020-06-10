@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carta-demo/static/css/main.5470a7e4.chunk.css",
+    "main.css": "/carta-demo/static/css/main.456f67e2.chunk.css",
     "main.js": "/carta-demo/static/js/main.a69a05f9.chunk.js",
     "main.js.map": "/carta-demo/static/js/main.a69a05f9.chunk.js.map",
     "runtime-main.js": "/carta-demo/static/js/runtime-main.6f09322f.js",
@@ -8,16 +8,16 @@
     "static/js/2.240f2905.chunk.js": "/carta-demo/static/js/2.240f2905.chunk.js",
     "static/js/2.240f2905.chunk.js.map": "/carta-demo/static/js/2.240f2905.chunk.js.map",
     "index.html": "/carta-demo/index.html",
-    "precache-manifest.2821f6e2602076c5ecf89c7f89497fed.js": "/carta-demo/precache-manifest.2821f6e2602076c5ecf89c7f89497fed.js",
+    "precache-manifest.dfe3f517da35ebc5ed3ceb4a6adab885.js": "/carta-demo/precache-manifest.dfe3f517da35ebc5ed3ceb4a6adab885.js",
     "service-worker.js": "/carta-demo/service-worker.js",
-    "static/css/main.5470a7e4.chunk.css.map": "/carta-demo/static/css/main.5470a7e4.chunk.css.map",
+    "static/css/main.456f67e2.chunk.css.map": "/carta-demo/static/css/main.456f67e2.chunk.css.map",
     "static/js/2.240f2905.chunk.js.LICENSE.txt": "/carta-demo/static/js/2.240f2905.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/carta-demo/static/media/logo.e9609aac.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6f09322f.js",
     "static/js/2.240f2905.chunk.js",
-    "static/css/main.5470a7e4.chunk.css",
+    "static/css/main.456f67e2.chunk.css",
     "static/js/main.a69a05f9.chunk.js"
   ]
 }
